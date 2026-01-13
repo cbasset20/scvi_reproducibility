@@ -7,5 +7,7 @@
  
  Setting scVI global seed manually must be within this allowable interval: 0 to 4294967295.  Going beyond this number will set scvi global seed automatically to 0. 
  The maximum digits for manual scvi global seed is 10 digits whereas random seed set by scVI is usually 14 digits which means that you cannot replicate a random seed (even if you know which seed was set by scVI) by setting it manually. 
+ 
  Setting scVI global seed from R in python before running scVIIntegration with the IntegrateLayers() function will result in reproducible objects/UMAPs. 
- Regressing out mitochondrial genes with SCTransform has no effect on scVIIntegration as the batch-corrected values that are stored under integrated.scvi reduction slot are exactly the same. 
+ 
+ NOTE: Regressing out mitochondrial genes with SCTransform has no effect on scVIIntegration as the batch-corrected values that are stored under integrated.scvi reduction slot are exactly the same. 
