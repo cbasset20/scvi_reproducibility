@@ -31,15 +31,11 @@ conda create -n scvi-env python=3.12
 
 conda activate scvi-env
 
-
-
 #install Pytorch to take advantage of accelerated GPU
 
 #Only install this version of pytorch to enable GPU acceleration
 
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 
-
-
 
 #(optional) install pytorch for CPU only
 
